@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start homepage.js"
+    "start": "pm2 start homepage.js",
+    "dev": "NODE_ENV=development nodemon --ignore anhnoi-homepage-public homepage.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.11",
+    "nanoid": "^3.1.20"
   }
 }
